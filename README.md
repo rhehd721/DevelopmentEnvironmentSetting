@@ -1,23 +1,23 @@
 # DevelopmentEnvironmentSetting
 
-## vim (.vimrc)
+## vim (~/.vimrc)
 ```cmd
-if has("syntax")
+if has("syntax")    # 문법 강조(색상)
     syntax on
 endif
 
-set hlsearch
-set nu
-set autoindent
-set ts=4
-set sts=4
+set hlsearch    # 검색문자 강조
+set nu  # 줄번호
+set autoindent  # 들여쓰기
+set ts=4    # '\t' 값을 출력시 몇 개의 스페이스로 보여줄지
+set sts=4   # tab 키를 눌렀을 때 몇 개의 스페이스를 입력할 것인지
 set cindent
 set laststatus=2
 set shiftwidth=4
-set showmatch
-set smartcase
-set smarttab
-set smartindent
-set ruler
+set showmatch   # 괄호 하이라이트
+set smartcase   # 검색, 탭, 들여쓰기 시 자동으로 설정
+set smarttab    # 검색, 탭, 들여쓰기 시 자동으로 설정
+set smartindent # 검색, 탭, 들여쓰기 시 자동으로 설정
+set ruler   # 커서 위치의 줄번호와 행번호 출력
 set fileencodings=utf8,euc-kr   # 인코딩
 ```
