@@ -19,5 +19,5 @@ set smartcase
 set smarttab
 set smartindent
 set ruler
-set fileencodings=utf8,euc-kr
+set fileencodings=utf8,euc-kr   # 
 ```
