@@ -21,3 +21,37 @@ set smartindent # 검색, 탭, 들여쓰기 시 자동으로 설정
 set ruler   # 커서 위치의 줄번호와 행번호 출력
 set fileencodings=utf8,euc-kr   # 인코딩
 ```
+
+## bat
+```bat
+@setlocal enableextensions enabledelayedexpansion
+@echo off
+
+set state="success"
+set filename="Z:\EasyMESH\done"
+set src_filename="Z:\EasyMESH\index.html"
+set dst_filename="C:\download\index.html"
+
+pause
+
+:loop
+
+
+           cls
+           COLOR 07
+           echo ####################################################
+           echo #### READY      Name                                  ###
+           echo ####################################################       
+           pause
+
+	
+	echo yes | copy  "Z:\EasyMESH\index.html"   "D:\"
+	
+  	timeout 3         
+   
+                      
+goto :loop
+
+del C:\download\index.html
+
+```
