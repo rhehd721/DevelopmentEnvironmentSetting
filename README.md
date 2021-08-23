@@ -55,3 +55,12 @@ goto :loop
 del C:\download\index.html
 
 ```
+
+## Linux_command (~/.bashrc)
+```cmd
+alias svndiff="svn diff | awk '/^Index/ {print $NF}'"
+alias c="clear"
+alias ff="grep -rn --exclude='*.svn-base'"
+alias gg="find -name"
+alias rr="rm -rf"
+```
