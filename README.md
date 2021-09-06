@@ -64,3 +64,30 @@ alias ff="grep -rn --exclude='*.svn-base'"
 alias gg="find -name"
 alias rr="rm -rf"
 ```
+## ArpCheck.sh
+```sh
+#!/bin/sh
+
+success=no
+ret="init"
+
+arping -I $2 -c 1 -w 1 $1 >/dev/null
+#arping -I brwan -c 1 -w 1 $192.168.123.100
+
+ret="$?"
+
+if [ $ret == 0 ]; then
+        success=yes
+else
+        success=no
+        break
+fi
+
+if [ "$success" = "yes" ]; then
+        echo 'SUCCESS'
+        return 0
+else
+        echo 'FAIL'
+        return 1
+fi
+```
