@@ -3,6 +3,7 @@
 ## install
 - tftpd64
 - Tera Term
+- Wireshark
 
 ## vim (~/.vimrc)
 ```cmd
