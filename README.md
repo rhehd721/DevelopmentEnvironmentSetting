@@ -91,3 +91,10 @@ else
         return 1
 fi
 ```
+## rdisc6
+```sh
+system("rm -f /var/rdisc_httpd");
+system("rdisc6 -w 1000 -r 1 ff02::2 eth0.1 | grep -c 'Router' >  /var/rdisc_httpd");
+
+FILE *fp = fopen("/var/rdisc_httpd", "r");
+```
