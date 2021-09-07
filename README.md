@@ -1,5 +1,9 @@
 # DevelopmentEnvironmentSetting
 
+## install
+- tftpd64
+- Tera Term
+
 ## vim (~/.vimrc)
 ```cmd
 if has("syntax")    # 문법 강조(색상)
