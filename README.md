@@ -1,5 +1,12 @@
 # DevelopmentEnvironmentSetting
 
+## MAC mouse scaling
+```cmd
+defaults read .GlobalPreferences com.apple.mouse.scaling	// 현재 감도 확인
+
+defaults write .GlobalPreferences com.apple.mouse.scaling 5	// 감도 변경
+```
+
 ## install
 - tftpd64
 - Tera Term
