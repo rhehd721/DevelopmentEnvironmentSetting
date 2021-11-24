@@ -138,3 +138,15 @@ system("rdisc6 -w 1000 -r 1 ff02::2 eth0.1 | grep -c 'Router' >  /var/rdisc_http
 
 FILE *fp = fopen("/var/rdisc_httpd", "r");
 ```
+
+# Error
+- Operation not permitted == 시스템 통합 보안 문제
+	- 해결방법 : SIP기능을 해제한다.
+	- 1. 재부팅시 cmd  + R 을 누르고 있는다. 복구화면이 뜰 것이다.
+	- 2. 언어를 선택하고 넘어간다.
+	- 3. 유틸리티 > 터미널 선택하여 터미널 창을 연다.
+	- 4. 터미널창에서 csrutil disable 입력하고 엔터 SIP기능이 해제되었다고 나온다.
+	- 5. 터미널에서 reboot 입력하고 엔터(재부팅한다.)
+	- 재부팅후에는 root 권한을 얻어 (sudo su - ) 복사, 이동, 삭제가 가능하게 된다.
+
+
